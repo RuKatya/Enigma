@@ -93,7 +93,6 @@ function App() {
     let sell12 = sell11 + orderSell[12][1]
     let sell13 = sell12 + orderSell[13][1]
     let sell14 = sell13 + orderSell[14][1]
-    // console.log(sell, sell1)
 
     return (
       <div className="main">

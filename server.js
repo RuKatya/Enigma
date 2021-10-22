@@ -9,7 +9,6 @@ app.get('/resultData', async (req, res) => {
 
     axios.get(`https://api.cryptowat.ch/markets/kraken/btceur/price?apikey=207TS7YTQBZVYZVIAEQ3`)
         .then((response) => {
-            // console.log(response.data)
             const data = response.data
             res.send({
                 data
@@ -21,13 +20,8 @@ app.get('/resultData', async (req, res) => {
 })
 
 app.get('/orderbookData', async (req, res) => {
-    // const { ipadress } = await req.body;
-
-    // console.log(`get ip: ${ipadress}`)
-
     axios.get(`https://api.cryptowat.ch/markets/kraken/btceur/orderbook?apikey=207TS7YTQBZVYZVIAEQ3`)
         .then((response) => {
-            // console.log(response.data)
             const data = response.data
             res.send({
                 data
